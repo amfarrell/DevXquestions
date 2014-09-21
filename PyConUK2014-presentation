@@ -1,0 +1,256 @@
+
+
+
+amfarrell@mit.edu         Andrew M. Farrell                @amfarrell
+
+
+
+                        Developer Experience:
+
+
+                  Questions you should ask yourself.
+
+
+
+
+
+
+                    github.com/amfarrell/DevXquestions
+
+
+
+
+
+
+
+
+
+Questions to ask yourself to improve your Developer Experience.
+
+    You've written a library/framework/codebase.
+
+    You're working on an open source project.
+    You want people to use it and join the ecosystem.
+    You want contributors to join and build the project.
+
+    You work for a company.
+    You want new hires to get up to speed quickly.
+    You want old hires to be productive and happy.
+
+    This codebase is a product.
+    It has a developer experience.
+
+    Your development toolchain is a product.
+    It has a developer experience.
+
+    (see @jessicamckellar and @trustrachel's talks)
+
+
+
+
+
+
+
+
+
+    If you believe developer time is valuable,
+    you believe that developer experience matters.
+
+
+    Much of developer experience does not depend on the codebase directly.
+    Some of it is hard to control.
+
+    But you can control:
+    - How you should design APIs.
+    - What errors should look like.
+    - How you should write documentation.
+    - How you should advertise your project.
+        ... and a whole lot more.
+
+    These are questions you should ask yourself when doing these things.
+
+
+
+
+
+
+
+
+
+
+
+
+                    This list is incomplete.
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Onboarding Experience (users, not contributors):
+    - How do people find your project? Why do people start using your project?
+        Yak-shaving from installing another thing?
+        Choosing among 3 libraries to do a thing?
+        Trying to learn a skill and thinks your project is the best tool?
+        Trying to learn a domain by using your libraries?
+        Being required to use it for a class?
+    - How do people gain a coherent mental model of your project?
+        Is it supposed to be discoverable like a consumer product?
+            (probably not.)
+        Is there a written walkthrough such as 
+            https://docs.djangoproject.com/en/1.7/intro/tutorial01/
+            that folks then are able to build something basic with?
+        Are people supposed to just read through the reference documentation?
+        Are there examples?
+        Are the examples tested?
+
+
+
+
+
+
+
+    Onboarding Experience (users, not contributors):
+    - How much infrastructure is there to set up? (yak shaving)
+        How many steps are there to set up this documentation?
+        Do you point to the canonical/correct way to set that up?
+        How many times do you need to google for something new?
+        Is there a sandbox hosted somewhere?
+    - How often are learners confident they're getting it right?
+        Do you say "this is what your output should look like:" ?
+        Does it have manual testing after substantial steps?
+        Does your tutorial use test-driven development? (see Angularjs)
+    - How Distraction/Discouragement resilient is your tutorial?
+        How easy is it to come back to onboarding?
+        Does it have checkpoints where someone can go sleep and come back?
+
+
+
+
+
+
+
+    Mentorship:
+    - Whom do your users know that they can ask for help?
+        Your office down the hall because you work together?
+        PyCon/meetup Attendees during a workshop?
+        Their TA at uni?
+        IRC/twitter hashtag/subreddit where they expect response after 5min?
+        Mailing list/web forum where they expect to wait a couple hours?
+    - How do people usually respond?
+        Silence
+        RTFM/LMGTFY
+        google for specific keywords
+        reference to particular documentation section
+        teaching mental model
+        Socratic questioning
+        rubber-ducking
+        pair-programming
+
+
+
+
+
+
+
+    Error Experience: "PC LOAD LETTER? Wtf is PC LOAD LETTER?"
+    - When an error pops up, what strings can people type into google?
+        Probably an exception: uniquely identifying? semanticly meaningful?
+    - What are the first results on google?
+        empty stackoverflow thread?
+        stackoverflow thread with one obviously-correct answer?
+        stackoverflow thread with one frequently-incorrect answer?
+        Other forum that has to be paged through?
+        Mailing list thread?
+        Blog post from 3 years ago that is out of date?
+        Blog post on the official project web-page
+        Reference documentation with tested-examples?
+
+
+
+
+
+
+
+    Reference Experience: "What is the way to do X with shrubbery.py"
+    - Is there One Best Way to Do it?
+        Is it obvious to non-Hollander with a mental model?
+        Are trade-offs understandable?
+    - Is the answer findable?
+        What keywords would someone search for?
+        Are those keywords obvious?
+        Is it findable?
+        Are the google keywords obvious?
+        Is the right search result obvious?
+        Is the right search result from project docs? a random blog post?
+
+
+
+
+
+
+
+
+    Reference Experience: "What is the way to do X with shrubbery.py?"
+    - Does someone need to keep referring to the same documentation?
+        Does your API have similar names (ex. prefetch_related/select_related)?
+        Does your API have a clear model?
+        Does your documentation express that model clearly and memorably?
+        Can I link to a particular section within the documentation?
+    - How much does someone need to cross-reference to answer a question?
+        Do you repeat yourself when helpful?
+        Do you require someone to look at another project to see your API
+            http://nose.readthedocs.org/en/latest/testing_tools.html
+
+
+
+
+
+
+
+
+    Contributor Experience:
+    - How hard is it to report bugs? (bug reporters are contributors)
+    - What things are immediately obvious to include in bug reports? 
+        What is the error message?
+    - How hard is it to find a bug to work on?
+        Do you have an "easy bug" list?
+        Before a sprint, do you find bugs to teach new contributors with?
+    - How hard is it to contribute to documentation?
+        Is it a wiki? A disorganized wiki?
+        Is it a wiki-like git repo? 
+            #See https://docs.angularjs.org/tutorial/step_00
+
+
+
+
+
+
+
+
+
+
+    Contributor Experience:
+    - How hard is it to get the code building/running
+        Is there a weird toolchain?
+        Is there a contributing.md with instructions on the toolchain?
+    - Is it easy to find the git repo?
+    - How well-tested is it?
+    - How easy is it to run the tests?
+        Can you quickly run a single test?
+        Can you quickly run a set of tests for a feature/domain?
+        Can you copy-paste the broken tests to re-run only those?
+    - How easy is it to understand the internal model?
+        Do you have an overview document alongside docstrings?
+        Up to date?
+
+
+
+
